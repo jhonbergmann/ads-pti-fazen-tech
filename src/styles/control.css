@@ -1,6 +1,7 @@
-body, html {
+body,
+html {
   height: 100%;
-  padding 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -13,8 +14,7 @@ body {
 .gradient {
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(at 300px 300px, rgba(249,200,155,.9) 0, #f9c89b 70%);
-
+  background-image: radial-gradient(at 300px 300px, rgba(249, 200, 155, 0.9) 0, #f9c89b 70%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,18 +22,14 @@ body {
 
 .content-wrapper {
   position: relative;
-
   width: 100%;
   max-width: 1100px;
-
   height: 100%;
   max-height: 680px;
-
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
-
   background-size: 60%;
 }
 
@@ -41,54 +37,49 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-
   font-size: 24px;
   line-height: 34px;
-
   display: flex;
   flex-direction: column;
-
   text-align: right;
 }
 
 .version strong {
   font-family: Nunito-SemiBold;
-  color: #FFF
+  color: #ffffff;
 }
 
 .version span {
   font-family: Nunito-ExtraLight;
   font-size: 15px;
-  color: #FFF;
+  color: #ffffff;
 }
 
 i {
-  color: #FFF;
+  color: #ffffff;
   width: 30px;
 }
+
 .title {
   position: absolute;
   left: 0;
   top: 0;
-
   font-size: 24px;
   line-height: 34px;
-
   display: flex;
   flex-direction: column;
-
   text-align: left;
 }
 
 .title strong {
   font-family: Nunito-SemiBold;
-  color: #FFF
-} 
+  color: #ffffff;
+}
 
 .title span {
   font-family: Nunito-ExtraLight;
   font-size: 15px;
-  color: #FFF
+  color: #ffffff;
 }
 
 .dairyCows {
@@ -104,26 +95,22 @@ i {
 
 .register label {
   font-family: Nunito-SemiBold;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .inputSmall {
   border-radius: 5px;
   border: none;
-
   height: 35px;
   width: 70px;
-
   opacity: 0.8;
 }
 
 .inputLarge {
   border-radius: 5px;
   border: none;
-
   height: 35px;
   width: 200px;
-
   opacity: 0.8;
 }
 
@@ -138,9 +125,7 @@ i {
   margin-top: 100px;
   border-radius: 5px;
   border: none;
-  
   padding: 15px 32px;
-
   opacity: 0.8;
 }
 
@@ -148,10 +133,8 @@ i {
   position: absolute;
   right: 0;
   top: 0;
-
   font-family: Nunito-SemiBold;
-
-  background-color: #FFF;
+  background-color: #ffffff;
   border: none;
   border-radius: 5px;
   color: #a55a3c;
@@ -166,15 +149,15 @@ i {
   cursor: pointer;
 }
 
-.registerBtn:hover {opacity: 1}
+.registerBtn:hover {
+  opacity: 1;
+}
 
 .leftBtn {
   font-family: Nunito-SemiBold;
-
   position: absolute;
   right: 0;
   bottom: 0;
-
   background-color: #ffe046;
   border: none;
   border-radius: 15px;
@@ -190,14 +173,16 @@ i {
   cursor: pointer;
 }
 
-.leftBtn:hover {opacity: 1}
+.leftBtn:hover {
+  opacity: 1;
+}
 
 @font-face {
   font-family: Nunito-SemiBold;
-  src: url(/src/fonts/Nunito-SemiBold.ttf);
+  src: url('/src/fonts/Nunito-SemiBold.ttf');
 }
 
 @font-face {
   font-family: Nunito-ExtraLight;
-  src: url(/src/fonts/Nunito-ExtraLight.ttf);
+  src: url('/src/fonts/Nunito-ExtraLight.ttf');
 }
