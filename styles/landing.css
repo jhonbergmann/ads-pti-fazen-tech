@@ -1,0 +1,123 @@
+#page-landing {
+  height: 100vh;
+  padding 0;
+  margin: 0;
+  background: linear-gradient(-45deg, #dceaff, #2b478b, #f9ddbf, #f99746);
+	background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.content-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 1100px;
+
+  height: 100%;
+  max-height: 680px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: url(/src/imgs/1x/landing.png) no-repeat 105% center;
+  background-size: 60%;
+}
+
+img {
+  width: 25%;
+}
+
+.content-wrapper main {
+  max-width: 350px;
+}
+
+.content-wrapper main h1 {
+  font-family: Nunito-SemiBold;
+  color: #FFF;
+  margin-bottom: 90px;
+  font-size: 65px;
+}
+
+.content-wrapper main p {
+  font-family: Nunito-ExtraLight;
+  color: #FFF;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.version {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  font-size: 24px;
+  line-height: 34px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+}
+
+.version strong {
+  font-family: Nunito-SemiBold;
+  color: #FFF
+}
+
+.version span {
+  font-family: Nunito-ExtraLight;
+  font-size: 15px;
+  color: #FFF
+}
+
+.button {
+  font-family: Nunito-SemiBold;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  background-color: #ffe046;
+  border: none;
+  border-radius: 15px;
+  color: #a55a3c;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 1}
+
+@font-face {
+  font-family: Nunito-SemiBold;
+  src: url(/src/fonts/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Nunito-ExtraLight;
+  src: url(/src/fonts/Nunito-ExtraLight.ttf);
+}
